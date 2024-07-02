@@ -1,0 +1,113 @@
+/* Estilos para a aplicação */
+
+body {
+    margin: 0;
+    padding: 0;
+    /*background: url('./images/885073.gif') no-repeat center center fixed;*/
+    background-color: lightblue;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  
+  .input-task {
+    width: calc(100% - 110px); /* Ajusta a largura do input para se adequar aos botões */
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .add-button {
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .task-item.completed {
+    background-color: lightgreen;
+  }
+  
+  .task-item.pending {
+    background-color: lightcoral;
+  }
+  
+  .task-name {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+    height: 1px;
+  }
+  
+  .complete-button, .delete-button {
+    padding: 8px;
+    margin-left: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 50px;
+  }
+  
+  .complete-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  @media (max-width: 600px) {
+    .input-task {
+      width: calc(100% - 75px); /* Ajuste para dispositivos menores */
+    }
+    
+    .add-button {
+      width: 100px; /* Ajuste para dispositivos menores */
+    }
+  }
+  
+  @media (max-width: 300px) {
+    .input-task {
+      width: calc(100% - 35px); /* Ajuste para dispositivos menores */
+    }
+    
+    .add-button {
+      width: 100px; /* Ajuste para dispositivos menores */
+    }
+  }
