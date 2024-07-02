@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    /*background: url('./images/885073.gif') no-repeat center center fixed;*/
+    background: url('./images/background.jpg') no-repeat center center fixed;
     background-color: lightblue;
     background-size: cover;
     font-family: Arial, sans-serif;
